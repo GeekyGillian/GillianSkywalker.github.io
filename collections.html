@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series Collections</title>
+    <link href="https://fonts.cdnfonts.com/css/star-wars" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/buchanan" rel="stylesheet">
+    
+    <style>
+        /* Global Styles */
+        body {
+            background: url('background2.jpg'), no-repeat center center fixed; 
+            font-family: 'Star Wars', sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        /* Glow effect for section heading */
+        h2.glow {
+            text-align: center;
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: #000000;
+            animation: glow 1.5s ease-in-out infinite alternate;
+            margin-bottom: 40px;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff0000, 0 0 20px #00a6ff, 0 0 25px #ff00ea, 0 0 30px #00ff3c;
+            }
+            100% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffd000, 0 0 40px #ffe100, 0 0 50px #fff200, 0 0 60px #ffa600;
+            }
+        }
+
+        /* Main container for the movie/series collection */
+        #more-collection {
+            padding: 40px 20px;
+        }
+
+        .more-movies {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Individual movie/series item styling */
+        .movie-item-list {
+            background-color: #222222;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .movie-item-list img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .movie-item-list h4 {
+            font-family: 'Star Wars', sans-serif;
+            font-size: 2rem;
+            color: #fff200;
+            margin: 0;
+        }
+
+        .movie-item-list p {
+            font-family: 'Buchanan', sans-serif;
+            font-size: 1rem;
+            color: #fff;
+            margin: 0;
+        }
+
+        /* Hover effects */
+        .movie-item-list:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .movie-item-list:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Button for loading more movies */
+        #loadMore {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #ff0080;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #loadMore:hover {
+            background-color: #ff3366;
+        }
+
+        /* Logo styling */
+        a img {
+            display: block;
+            margin: 40px auto;
+            width: 150px;
+            height: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section id="more-collection">
+        <h2 class="glow">Other Series</h2>
+
+        <div class="more-movies" id="movies-container">
+            <!-- Movie items will be added dynamically here -->
+
+            <div class="movie-item-list">
+                <img src="CloneWars.jpeg" alt="Clone Wars" />
+                <h4>Clone Wars</h4>
+                <p>As the Clone Wars sweep through the galaxy, Anakin Skywalker and his new Padawan learner Ahsoka Tano plunge into a dangerous mission to rescue the kidnapped son of crime lord Jabba the Hutt. The renegade Count Dooku is determined to make sure that they fail, and with his deadly assassin Asajj Ventress in pursuit, this is a mission with grave consequences.</p>
+            </div>
+
+            <div class="movie-item-list">
+                <img src="TalesOfJedi.jpeg" alt="Tales Of Jedi" />
+                <h4>Tales Of Jedi</h4>
+                <p>A six-episode event featuring parables built around Jedi from the prequel era. Journey into the lives of two distinctly different Jedi — Ahsoka Tano and Count Dooku. Each will be put to the test as they make choices that will define their destinies.</p>
+            </div>
+
+            <div class="movie-item-list">
+                <img src="BadBatch.jpeg" alt="Bad Batch" />
+                <h4>Bad Batch</h4>
+                <p>The Bad Batch follows the elite and experimental clones of the Bad Batch (first introduced in “The Clone Wars”) as they find their way in a rapidly changing galaxy in the immediate aftermath of the Clone War. Members of Bad Batch—a unique squad of clones who vary genetically from their brothers in the Clone Army—each possess a singular exceptional skill that makes them extraordinarily effective soldiers and a formidable crew.</p>
+            </div>
+        </div>
+
+        <!-- Load more series button -->
+
+        <!-- Logo -->
+
+     
+
+      
+    </section>
+    <section id="series2">
+        <div class="section2">
+            <h4>Other Series from Character's Lore</h4>
+    
+            <div class="series-collection2">
+                <!-- Obi Wan Kenobi Series Item -->
+                <div class="series-item">
+                    <img src="Obi Wan Kenobi 2.jpeg" alt="Obi-Wan Kenobi" />
+                    <h4>Obi-Wan Kenobi</h4>
+                    <p>During the reign of the Empire, Obi-Wan Kenobi embarks on a crucial mission.</p>
+                </div>
+    
+                <!-- The Mandalorian Series Item -->
+                <div class="series-item">
+                    <img src="Mando.jpeg" alt="Mandalorian" />
+                    <h4>The Mandalorian</h4>
+                    <p>After the fall of the Empire, a lone Mandalorian makes his way through the lawless galaxy with his foundling, Grogu.</p>
+                </div>
+    
+                <!-- The Book of Boba Fett Series Item -->
+                <div class="series-item">
+                    <img src="bobafett2.jpeg" alt="Boba Fett" />
+                    <h4>The Book of Boba Fett</h4>
+                    <p>The Book of Boba Fett finds legendary bounty hunter Boba Fett and mercenary Fennec Shand navigating the galaxy’s underworld when they return to the sands of Tatooine to stake their claim on the territory once ruled by Jabba the Hutt and his crime syndicate.</p>
+                </div>
+            </div>
+        </div>
+        <style>
+            /* Section container styling */
+#series2 {
+    padding: 40px 20px;
+    background-color: #111111;
+}
+
+.section2 h4 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff200;
+    margin-bottom: 30px;
+}
+
+/* Main collection container */
+.series-collection2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual series item container */
+.series-item {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.series-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.series-item h4 {
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1.5rem;
+    color: #fff200;
+    margin: 0;
+}
+
+.series-item p {
+    font-family: 'Buchanan', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    margin: 0;
+}
+
+/* Hover effects */
+.series-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.series-item:hover img {
+    transform: scale(1.1);
+}
+
+        </style>
+        <script>
+            AOS.init({
+                duration: 1000, // Animation duration in milliseconds
+                once: true, // Animation happens only once
+                easing: 'ease-in-out', // Smooth easing function
+            });
+        </script>
+        
+    </section>
+    <section id="more-collection">
+        <h2 class="glow">Other Series</h2>
+        <div class="more-movies" id="movies-container">
+            <!-- Dynamic movie content -->
+        </div>
+    </section>
+
+    <section class="series3">
+        <div class="section3">
+            <h4>Other Sequels Throughout the Series</h4>
+            <div class="series-collection3">
+                <div class="series-item">
+                    <img src="visions.jpeg" alt="Star Wars: Visions">
+                    <h4>Star Wars: Visions</h4>
+                    <p>This anthology of animated shorts celebrates the Star Wars mythos.</p>
+                </div>
+                <div class="series-item">
+                    <img src="resistance.jpeg" alt="Star Wars: Resistance">
+                    <h4>Star Wars: Resistance</h4>
+                    <p>Follow young pilot Kaz as he spies on the First Order.</p>
+                </div>
+                <div class="series-item">
+                    <img src="rebel2.jpeg" alt="Star Wars: Rebels">
+                    <h4>Star Wars: Rebels</h4>
+                    <p>Set before A New Hope, Rebels explores the start of the Rebellion.</p>
+                </div>
+            </div>
+        </div>
+        <style>
+                 /* Global Styles */
+        body {
+            background: url('background2.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            font-family: 'Star Wars', sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        /* Glow effect for section heading */
+        h2.glow {
+            text-align: center;
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: #000000;
+            animation: glow 1.5s ease-in-out infinite alternate;
+            margin-bottom: 40px;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff0000, 0 0 20px #00a6ff, 0 0 25px #ff00ea, 0 0 30px #00ff3c;
+            }
+            100% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffd000, 0 0 40px #ffe100, 0 0 50px #fff200, 0 0 60px #ffa600;
+            }
+        }
+
+        /* Main container for the movie/series collection */
+        #more-collection {
+            padding: 40px 20px;
+        }
+
+        .more-movies {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Individual movie/series item styling */
+        .movie-item-list {
+            background-color: #222222;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .movie-item-list img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .movie-item-list h4 {
+            font-family: 'Star Wars', sans-serif;
+            font-size: 2rem;
+            color: #fff200;
+            margin: 0;
+        }
+
+        .movie-item-list p {
+            font-family: 'Buchanan', sans-serif;
+            font-size: 1rem;
+            color: #fff;
+            margin: 0;
+        }
+
+        /* Hover effects */
+        .movie-item-list:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .movie-item-list:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Section 3 Styling */
+        .series3 {
+            padding: 40px 20px;
+            background-color: #111111;
+        }
+
+        .series3 h4 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #fff200;
+            margin-bottom: 30px;
+        }
+
+        .series-collection3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .series-collection3 .series-item {
+            background-color: #222222;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .series-collection3 .series-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .series-collection3 .series-item h4 {
+            font-family: 'Star Wars', sans-serif;
+            font-size: 1.5rem;
+            color: #fff200;
+            margin: 0;
+        }
+
+        .series-collection3 .series-item p {
+            font-family: 'Buchanan', sans-serif;
+            font-size: 1rem;
+            color: #fff;
+            margin: 0;
+        }
+
+        .series-collection3 .series-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .series-collection3 .series-item:hover img {
+            transform: scale(1.1);
+        }
+        </style>
+    </section>
+    
+   
+   
+    
+
+    <a href="index.html"><img src="logo2-removebg-preview.png" alt="Star Wars Logo" /></a>
+
+    <script>
+        // Fetch movie data from the server
+        async function loadMovies() {
+            try {
+                const response = await fetch('/api/movies');
+                const movies = await response.json();
+
+                const movieContainer = document.getElementById("movies-container");
+
+                movies.forEach(movie => {
+                    const movieItem = document.createElement("div");
+                    movieItem.classList.add("movie-item-list");
+
+                    movieItem.innerHTML = `
+                        <img src="${movie.imageUrl}" alt="${movie.title}" />
+                        <h4>${movie.title}</h4>
+                        <p>${movie.description}</p>
+                    `;
+
+                    movieContainer.appendChild(movieItem);
+                });
+            } catch (error) {
+                console.error("Error fetching movie data:", error);
+            }
+        }
+
+        // Load movies initially
+        loadMovies();
+
+        // Load more movies when the button is clicked
+        document.getElementById("loadMore").addEventListener("click", function() {
+            loadMovies();
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comics Page</title>
+    <link href="https://fonts.cdnfonts.com/css/star-wars" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/buchanan" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            background: url('comicpage.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Star Wars', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+        }
+
+        /* Glow effect for headings */
+        h2.glow {
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            font-size: 3rem;
+            color: #211c02;
+            animation: glow 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff0000, 0 0 20px #00a6ff, 0 0 25px #ff00ea, 0 0 30px #00ff3c;
+            }
+            100% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffd000, 0 0 40px #ffe100, 0 0 50px #fff200, 0 0 60px #ffa600;
+            }
+        }
+
+        /* Header text styling */
+        h3 {
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Buchanan', sans-serif;
+            font-size: 1.5rem;
+            background: rgba(0, 0, 0, 0.7);
+            color: #000000;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 10;
+        }
+
+        /* Comics Collection Styles */
+        .section {
+            padding: 40px 20px;
+            padding-top: 60px; /* To account for fixed h3 */
+        }
+
+        .collection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .item {
+            background-color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .item h4 {
+            font-family: 'Star Wars', sans-serif;
+            font-size: 1.5rem;
+            color: #ffe600de;
+            margin: 10px 0;
+        }
+
+        .item p {
+            font-family: 'Buchanan', sans-serif;
+            font-size: 1rem;
+            color: #fff;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .item:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Section title styling */
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section-title h2 {
+            font-family: 'Star Wars', sans-serif;
+            font-size: 2rem;
+            color: rgb(255, 234, 0);
+        }
+
+        /* Creator Section */
+        #creators {
+            font-family: 'Buchanan', sans-serif;
+            padding: 40px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        #creators h2 {
+            font-family: 'Star Wars', sans-serif;
+            text-align: center;
+            color: #ffd500;
+        }
+
+        .creator-image {
+            display: block;
+            width: 150px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 50%;
+            border: 3px solid #ffd500;
+        }
+
+        #read-more-btn {
+            font-family: 'Buchanan', sans-serif;
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #ffd500;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #read-more-btn:hover {
+            background-color: #ff9900;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Responsive Styling */
+        @media screen and (max-width: 768px) {
+            .item {
+                width: 150px;
+            }
+
+            h2.glow {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Other Comics Collection Section -->
+    <section id="more-collection" class="section">
+        <h2 class="glow">Other Comics Collection</h2>
+        <h3>Comic Books Across Timelines: High Republic, Fall of Jedi, and Reign of the Empire.</h3>
+        <div class="collection">
+            <div class="item">
+                <img src="highrepublic1.jpeg" alt="High Republic">
+                <h4>High Republic</h4>
+                <p>The golden age of the Jedi, faced numerous challenges across the galaxy.</p>
+            </div>
+            <div class="item">
+                <img src="Quest.jpg" alt="Quest of the Hidden City">
+                <h4>Quest of the Hidden City</h4>
+                <p>A thrilling tale of exploration and danger in the High Republic era.</p>
+            </div>
+            <div class="item">
+                <img src="blade1.jpg" alt="Blade #1">
+                <h4>Blade #1</h4>
+                <p>Discover the story of Jedi Knight Porter Engle in this action-packed series.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fall of the Jedi Section -->
+    <section id="fall-jedi" class="section">
+        <div class="section-title">
+            <h2>Fall of the Jedi</h2>
+        </div>
+        <div class="collection">
+            <div class="item">
+                <img src="YodaComic.jpeg" alt="Yoda series">
+                <h4>Yoda Series</h4>
+                <p>Explore the wisdom and struggles of Jedi Master Yoda in this captivating series.</p>
+            </div>
+            <div class="item">
+                <img src="Padawanseries.jpeg" alt="Padawan series">
+                <h4>Padawan Series</h4>
+                <p>A young Obi-Wan Kenobi learns the ways of the Force in this prequel story.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reign of the Empire Section -->
+    <section id="reign-empire" class="section">
+        <div class="section-title">
+            <h2>Reign of the Empire</h2>
+        </div>
+        <div class="collection">
+            <div class="item">
+                <img src="DarkLord1.jpeg" alt="Darth Vader: Dark Lord of the Sith">
+                <h4>Darth Vader: Dark Lord of the Sith</h4>
+                <p>Follow Darth Vader's journey as he embraces the dark side.</p>
+            </div>
+            <div class="item">
+                <img src="RiseRedBlade.jpeg" alt="Inquisitor: Rise of the Red Blade">
+                <h4>Inquisitor: Rise of the Red Blade</h4>
+                <p>The rise of the Inquisitor Iskat Akaris amidst the fall of the Jedi.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creator Section -->
+    <section id="creators">
+        <h2>About the Creator</h2>
+        <img src="author.jpeg" alt="George Lucas portrait" class="creator-image">
+        <h3>George Lucas</h3>
+        <p>George Lucas is an iconic American director, screenwriter, and producer, renowned for creating the legendary <strong>Star Wars</strong> and <strong>Indiana Jones</strong> film series.</p>
+        <button id="read-more-btn">Read More</button>
+        <p id="additional-info" class="hidden">Lucas also founded Lucasfilm, THX, and Industrial Light & Magic, pushing the boundaries of film production technology. His work has profoundly influenced the cinema industry.</p>
+        <a href="index.html"><img src="logo2-removebg-preview.png" alt="Star Wars Logo" /></a>
+    </section>
+
+    <script>
+        document.getElementById('read-more-btn').addEventListener('click', () => {
+            const extraInfo = document.getElementById('additional-info');
+            const btn = document.getElementById('read-more-btn');
+            extraInfo.classList.toggle('hidden');
+            btn.textContent = extraInfo.classList.contains('hidden') ? 'Read More' : 'Read Less';
+        });
+    </script>
+</body>
+</html>
