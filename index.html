@@ -10,8 +10,6 @@
     <link href="https://fonts.cdnfonts.com/css/buchanan" rel="stylesheet">
                 
 
-    <!--new filed-->
-    <!--Main page and edited -->
     <style>
         /* General Styles */
         body {
@@ -436,7 +434,11 @@
 
             <!--More stories button more information about the lore in Star wars universe. -->
 
-          
+            <div class="more-stories">
+                <button type="button" class="View Lore">
+                    <i class="fa fa-book"></i> View More Stories
+                    <a href="stories.html">More stories</a>
+                </button>
                 
             </div>
         </div>
@@ -785,9 +787,6 @@
                 </div>
             </div>
             <button class="more-comics">
-
-
-                <!--Link to comics sectopm -->
                 <a href="ComicsPage.html">Read More.</a>
             </button>
         </div>
@@ -1077,7 +1076,7 @@
                     opacity: 0;
                     transform: translateY(-30px);
                 }
-                to { 
+                to {
                     opacity: 1;
                     transform: translateY(0);
                 }
@@ -1337,6 +1336,14 @@
                 <p>$30</p>
                 <button>Buy Now</button>
             </div>
+            <div class="shop-item">
+                <h3>Lightsaber Chopsticks</h3>
+                <img src="Lightsaber.jpeg" alt="LightsaberChopsticks" />
+                <p>Lightsaber sticks</p>
+                <p>$20</p>
+                <button>Buy Now</button>
+            </div>
+            
         </div>
     
         <!-- More Items Section -->
@@ -1434,7 +1441,6 @@
             transform: scale(1.1);
         }
     
-   
     </style>
     
     <script>
@@ -1461,6 +1467,7 @@
                 .catch(err => console.error("Failed to fetch shop items", err));
         });
     </script>
+    </section>
     <footer>
         <div class="footer-container">
             <div class="background-overlay"></div>

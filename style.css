@@ -1,0 +1,203 @@
+ /* General Styles */
+ body {
+    background: url('starwars bg.jpg') no-repeat center center/cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #12b4f4;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: red;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #0d0b19;
+    color: rgb(255, 234, 7);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: #111;
+}
+
+#menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+#nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#nav-links a:hover {
+    background-color: #ffd83e;
+    color: #000;
+}
+
+/* Hero Section */
+.hero {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5rem 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero button {
+    font-size: 1.3rem; 
+    font-family: Impact, sans-serif;
+    padding: 1rem 2rem;
+    border: none;
+    background-color: black;
+    color: yellow;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.about-page {
+    background: url('starwarsmain.jpg') no-repeat center center/cover;
+    margin-bottom: 100px; 
+    padding: 4% 1rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Added background color */
+}
+
+/* Sections */
+section {
+    margin-bottom: 20rem; 
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+section p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Scrollbar Styles */
+section {
+    max-height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ffd83e #111;
+}
+
+section::-webkit-scrollbar {
+    width: 8px;
+}
+
+section::-webkit-scrollbar-thumb {
+    background: #ffd83e;
+    border-radius: 5px;
+}
+
+section::-webkit-scrollbar-track {
+    background: #111;
+}
+
+/* Footer */
+footer {
+    background-color: #0b0814;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #menu-toggle {
+        display: block;
+    }
+
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #222;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 200px;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+
+    #nav-links.visible {
+        display: flex;
+    }
+
+    #nav-links a {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .hero {
+        padding: 3rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.25rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}

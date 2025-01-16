@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.cdnfonts.com/css/star-wars" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/buchanan" rel="stylesheet">
+    
+</head>
+<body>
+    <section id="Collections">
+        <h1 class="fade-in">Comic Collections in Star Wars Universe</h1>
+    
+        <h2 class="fade-in">High Republic</h2>
+        <div class="container" id="collections-container">
+            <div class="collection-list">
+                <div class="collection-item fade-in" id="collection-1">npm 
+                    <img src="highrepublic1.jpeg" alt="High Republic">
+                    <h3>High Republic</h3>
+                    <p>The golden age of the Jedi, faced numerous challenges across the galaxy.</p>
+                </div>
+                <div class="collection-item fade-in" id="collection-2">
+                    <img src="quest.jpeg" alt="Quest of the Hidden City">
+                    <h3>Quest of the Hidden City</h3>
+                    <p>A thrilling tale of exploration and danger in the High Republic era.</p>
+                </div>
+                <div class="collection-item fade-in" id="collection-3">
+                    <img src="blade1.jpeg" alt="The Blade #1">
+                    <h3>The Blade #1</h3>
+                    <p>Discover the story of Jedi Knight Porter Engle in this action-packed series.</p>
+                </div>
+            </div>
+        </div>
+    
+        <h2 class="fade-in">Fall Of the Jedi</h2>
+        <div class="container" id="collections-container">
+            <div class="collection-item fade-in">
+                <img src="YodaComic.jpeg" alt="Fall of the Jedi">
+                <h3>Yoda series</h3>
+                <p>Explore the wisdom and struggles of Jedi Master Yoda in this captivating comic series.</p>
+            </div>
+            <div class="collection-item fade-in">
+                <img src="padawan.jpeg" alt="Padawan">
+                <h3>Padawan</h3>
+                <p>A young Obi-Wan Kenobi learns the ways of the Force in this prequel story.</p>
+            </div>
+        </div>
+    
+        <h2 class="fade-in">Reign Of The Empire</h2>
+        <div class="container" id="collections-container">
+            <div class="collection-item fade-in">
+                <img src="DarkLord1.jpeg" alt="Darth Vader: Dark Lord of the Sith">
+                <h3>Darth Vader: Dark Lord of the Sith</h3>
+                <p>Follow Darth Vader's journey as he embraces the dark side.</p>
+            </div>
+            <div class="collection-item fade-in">
+                <img src="RiseRedBlade.jpeg" alt="Rise">
+                <h3>Inquisitor: Rise of the Red Blade</h3>
+                <p>The rise of the Inquisitor Iskat Akaris amidst the fall of the Jedi.</p>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        /* General Styling */
+        #Collections {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    
+        h1, h2 {
+            font-family: 'Star Wars', sans-serif;
+            text-align: center;
+        }
+    
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+    
+        .collection-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+    
+        .collection-item img {
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+    
+        .collection-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+    
+        .collection-item:hover img {
+            transform: scale(1.1);
+        }
+    
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+    
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll(".fade-in");
+    
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.1 });
+    
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
+    
+    <section id="creator">
+        <div class="creator details">
+            <h3>George Lucas</h3>
+            <p>
+                The creator of the Star Wars franchise, one of the most iconic and influential film series in cinema history.
+                Here are key details about Star Wars and its connection to George Lucas:
+            </p>
+            <button id="toggle" class="btn btn-primary">More Info</button>
+            <div class="more-info">
+                <p>Release Date: The original Star Wars film (later renamed Star Wars: Episode IV - A New Hope) was released on May 25, 1977.</p>
+                <p>Premise: Set in a galaxy far, far away, the story of Star Wars explores themes of good versus evil, heroism, redemption, and the struggle for power. It follows the adventures of characters such as Luke Skywalker, Princess Leia, Han Solo, and Darth Vader.</p>
+                <p>Influences: Lucas was inspired by a mix of pulp serials, Akira Kurosawa’s films, World War II dogfights, and mythological stories (particularly Joseph Campbell’s The Hero with a Thousand Faces).</p>
+                <p>Innovative Special Effects: The film was groundbreaking in terms of visual effects, made possible by Lucas’s creation of Industrial Light & Magic (ILM), which became the leading special effects studio in Hollywood.</p>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+    
+        #creator {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    
+        .creator h3 {
+            font-family: 'Star Wars', sans-serif;
+            color: #ffd500;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+    
+        .creator p {
+            color: #ffffff;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+    
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            background-color: #ffe600;
+            color: rgb(0, 0, 0);
+            padding: 10px 15px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+    
+        .btn:hover {
+            background-color: #e8e8e8;
+        }
+    
+        .more-info {
+            display: none;
+            margin-top: 20px;
+        }
+    
+        /* Add responsiveness */
+        @media (max-width: 768px) {
+            #creator {
+                padding: 15px;
+            }
+    
+            .creator h3 {
+                font-size: 1.6rem;
+            }
+    
+            .creator p {
+                font-size: 0.9rem;
+            }
+    
+            .btn {
+                padding: 8px 12px;
+            }
+        }
+    </style>
+    
+    <script>
+        document.getElementById("toggle").addEventListener("click", function() {
+            var moreInfo = document.querySelector(".more-info");
+            if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
+                moreInfo.style.display = "block";
+                this.textContent = "Less Info";  // Change button text to "Less Info"
+            } else {
+                moreInfo.style.display = "none";
+                this.textContent = "More Info";  // Change button text back to "More Info"
+            }
+        });
+    </script>
+    
+</body>
+</html>
