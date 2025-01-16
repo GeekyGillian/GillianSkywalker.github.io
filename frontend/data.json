@@ -1,0 +1,62 @@
+{
+    "movies": [
+        {
+            "title": "A New Hope",
+            "episode": "Episode IV",
+            "releaseYear": 1977,
+            "description": "The Rebel Alliance must fight to restore freedom to the galaxy, while Luke Skywalker embarks on a journey to become a Jedi.",
+            "poster": "New Hope.jpg"
+        },
+        {
+            "title": "The Empire Strikes Back",
+            "episode": "Episode V",
+            "releaseYear": 1980,
+            "description": "The Galactic Empire pursues the remnants of the Rebel Alliance, and Luke Skywalker endeavors to learn the ways of the Force.",
+            "poster": "Empire.jpeg"
+        },
+        {
+            "title": "Return of the Jedi",
+            "episode": "Episode VI",
+            "releaseYear": 1983,
+            "description": "The Rebels mount a massive attack on the Empire, while Luke confronts Darth Vader.",
+            "poster": "Return Of The Jedi.jpeg"
+        }
+    ],
+    "news": [
+        {
+            "title": "Star Wars: Vision Volume 3",
+            "description": "Star Wars: Vision Volume 3 is set to return in 2025, shedding light on new stories.",
+            "image": "Star wars vision.jpeg"
+        },
+        {
+            "title": "Star Wars Celebration Japan 2025",
+            "description": "The new badge art for Star Wars Celebration Japan is officially updated.",
+            "image": "newsposter2.jpeg"
+        },
+        {
+            "title": "Behind the Scenes of Skeleton Crew",
+            "description": "An inside look at the creature effects of Star Wars: Skeleton Crew.",
+            "image": "skeletoncrew.jpeg"
+        }
+    ],
+    "shopItems": [
+        {
+            "name": "Coffee Table",
+            "description": "A stylish coffee table made from durable wood.",
+            "image": "Table.jpeg",
+            "price": 100
+        },
+        {
+            "name": "Star Wars Mug",
+            "description": "A unique Star Wars-themed mug.",
+            "image": "mug2.jpg",
+            "price": 10
+        },
+        {
+            "name": "Vader's Watch",
+            "description": "A stylish watch featuring Darth Vader.",
+            "image": "Darth Vader watch.jpg",
+            "price": 30
+        }
+    ]
+}
