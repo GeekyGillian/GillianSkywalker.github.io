@@ -1,0 +1,86 @@
+{
+    "movies": [
+        {
+            "title": "A New Hope",
+            "episode": "Episode IV",
+            "releaseYear": 1977,
+            "description": "The first film in the Star Wars series where a young Luke Skywalker embarks on a journey to rescue Princess Leia from the evil Galactic Empire.",
+            "poster": "New Hope.jpg"
+        },
+        {
+            "title": "The Empire Strikes Back",
+            "episode": "Episode V",
+            "releaseYear": 1980,
+            "description": "The second film in the original trilogy where the Rebels are pursued by Darth Vader and the Empire.",
+            "poster": "Empire.jpeg"
+        },
+        {
+            "title": "Return of the Jedi",
+            "episode": "Episode VI",
+            "releaseYear": 1983,
+            "description": "The conclusion of the original trilogy where the Rebels unite for a final battle against the Empire.",
+            "poster": "Return Of The Jedi.jpeg"
+        }
+    ],
+    "comics": [
+        {
+            "title": "STAR WARS (2015) #1",
+            "description": "The destruction of the Death Star marks a triumph for the Rebel Alliance. However, the struggle against the Empire continues.",
+            "image": "comic1.jpg"
+        },
+        {
+            "title": "STAR WARS (2015) #2",
+            "description": "The Rebel assault on Cymoon 1 continues as Luke faces Darth Vader and Han, Leia, and the others find themselves trapped.",
+            "image": "comic2.jpg"
+        }
+    ],
+    "news": [
+        {
+            "title": "Star Wars Vision Returns with Volume 3 in 2025",
+            "description": "The third installment of the popular animated anthology series is set to return.",
+            "image": "Star wars vision.jpeg"
+        },
+        {
+            "title": "New Star Wars Celebration Japan 2025 Badge Art - Updated",
+            "description": "Check out the updated badge art for the upcoming Star Wars Celebration in Japan.",
+            "image": "newsposter2.jpeg"
+        }
+    ],
+    "shopItems": [
+        {
+            "name": "Coffee Table",
+            "description": "A stylish coffee table made from durable wood.",
+            "price": 150,
+            "image": "Table.jpeg"
+        },
+        {
+            "name": "Star Wars Mug",
+            "description": "A unique Star Wars-themed mug.",
+            "price": 15,
+            "image": "mug2.jpg"
+        },
+        {
+            "name": "Vader's Watch",
+            "description": "Vader's Watch - a timepiece for the dark side.",
+            "price": 30,
+            "image": "Darth Vader watch.jpg"
+        }
+    ],
+    "characters": [
+        {
+            "name": "Anakin Skywalker",
+            "description": "Discovered as a slave on Tatooine, Anakin was believed to be the Chosen One destined to bring balance to the Force.",
+            "image": "Anakin.jpg"
+        },
+        {
+            "name": "Obi-Wan Kenobi",
+            "description": "A noble Jedi Master who fought alongside Anakin Skywalker.",
+            "image": "Obiwanart2.jpg"
+        },
+        {
+            "name": "Luke Skywalker",
+            "description": "The hero of the Rebellion and a skilled Jedi Knight, Luke seeks to save the galaxy from the Empire.",
+            "image": "Luke Skywalker.jpg"
+        }
+    ]
+}
