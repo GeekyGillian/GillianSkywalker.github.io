@@ -28,7 +28,7 @@
 
         a:hover {
             background-color: red;
-            color: #fff;
+            color: #ffffff;
         }
 
         /* Header */
@@ -304,7 +304,11 @@
           <div class="page-introduction">
             <p>Discover the rich history and amazing stories of the galaxy's most iconic 
                 films and TV shows. Explore the characters, their backstories, and the events that shaped the galaxy.</p>
-  
+
+
+                <div class="animation">
+                    <img src="lightsaber2.png" alt="lightsaber2" />
+                </div>
           </div>
     </section>
     <section id="about">
@@ -1289,38 +1293,32 @@
         </script>
     </section>
     
-    
-
-    
-    
-  
     <section id="Shops">
         <h2>Shop</h2>
         <p>Visit our store to purchase our favorite Star Wars-themed items.</p>
-        <div id="shop-items" class="scrollable-shop-items">
-            <!-- Shop Item 1: Coffee Table -->
+        <div id="shop-items" class="scrollable-shop-items" tabindex="0" aria-label="Scrollable shop items">
+            <!-- Static Shop Items -->
             <div class="shop-item">
                 <h3>Coffee Table</h3>
                 <img src="Table.jpeg" alt="Coffee Table" />
                 <p>A stylish coffee table made from durable wood.</p>
+                <p>$250</p>
                 <button>Buy Now</button>
             </div>
-            <!-- Shop Item 2: Star Wars Mug -->
             <div class="shop-item">
                 <h3>Star Wars Mug</h3>
                 <img src="mug2.jpg" alt="Star Wars Mug" />
                 <p>A unique Star Wars-themed mug.</p>
+                <p>$15</p>
                 <button>Buy Now</button>
             </div>
-            <!-- Shop Item 3: Vader's Watch -->
             <div class="shop-item">
                 <h3>Vader's Watch</h3>
                 <img src="Darth Vader watch.jpg" alt="Vader's Watch" />
                 <p>Vader's Watch</p>
-                <p>$30</p>
+                <p>$25</p>
                 <button>Buy Now</button>
             </div>
-            <!-- Shop Item 4: Yoda's Plush -->
             <div class="shop-item">
                 <h3>Yoda's Plush</h3>
                 <img src="yoda.jpeg" alt="Baby Yoda Plush" />
@@ -1328,146 +1326,148 @@
                 <p>$30</p>
                 <button>Buy Now</button>
             </div>
-            <!-- Shop Item 5: Lego Death Star -->
             <div class="shop-item">
                 <h3>Lego Death Star</h3>
                 <img src="lego1.jpg" alt="Lego Death Star" />
                 <p>Lego Star Wars Set: The Death Star</p>
-                <p>$30</p>
+                <p>$100</p>
                 <button>Buy Now</button>
             </div>
             <div class="shop-item">
                 <h3>Lightsaber Chopsticks</h3>
-                <img src="Lightsaber.jpeg" alt="LightsaberChopsticks" />
+                <img src="Lightsaber.jpeg" alt="Lightsaber Chopsticks" />
                 <p>Lightsaber sticks</p>
-                <p>$20</p>
+                <p>$50</p>
                 <button>Buy Now</button>
             </div>
-            
         </div>
     
-        <!-- More Items Section -->
-        
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #121212;
+                color: #fff;
+                margin: 0;
+                padding: 0;
+            }
+            
+            h2 {
+                font-family: 'Star Wars', sans-serif;
+                font-size: 36px;
+                text-align: center;
+                color: #ffcc00;
+                margin-bottom: 20px;
+            }
+            
+            p {
+                text-align: center;
+                font-size: 18px;
+                color: #ccc;
+            }
+            
+            #shop-items {
+                display: flex;
+                gap: 20px;
+                overflow: hidden;
+                padding: 20px;
+                background-color: #1f1f1f;
+                position: relative;
+            }
+    
+            .shop-item {
+                background: #222;
+                border: 2px solid #444;
+                border-radius: 10px;
+                width: 250px;
+                flex-shrink: 0;
+                text-align: center;
+                padding: 20px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+                position: relative;
+                overflow: hidden;
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+            
+            .shop-item:hover {
+                transform: scale(1.05);
+                box-shadow: 0 10px 20px rgba(255, 204, 0, 0.6);
+            }
+            
+            .shop-item img {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+                transition: transform 0.3s ease-in-out;
+            }
+            
+            .shop-item:hover img {
+                transform: scale(1.1);
+            }
+            
+            .shop-item h3 {
+                font-family: 'Star Wars', sans-serif;
+                font-size: 20px;
+                color: #ffcc00;
+                margin: 10px 0;
+            }
+            
+            .shop-item p {
+                font-size: 14px;
+                color: #ccc;
+                margin-bottom: 15px;
+            }
+            
+            .shop-item button {
+                padding: 10px;
+                background: #ffcc00;
+                color: #000;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s, transform 0.3s;
+            }
+            
+            .shop-item button:hover {
+                background-color: #000;
+                color: #ffcc00;
+                transform: scale(1.1);
+            }
+    
+            @media (max-width: 800px) {
+                .shop-item {
+                    width: 200px;
+                }
+            }
+        </style>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const shopItems = document.getElementById("shop-items");
+    
+                let scrollAmount = 0;
+                const scrollSpeed = 1; // Pixels per frame
+                const scrollInterval = 20; // Milliseconds between frames
+    
+                // Duplicate items for smooth looping
+                shopItems.innerHTML += shopItems.innerHTML;
+    
+                function autoScroll() {
+                    scrollAmount += scrollSpeed;
+                    shopItems.scrollLeft = scrollAmount;
+    
+                    // Reset scroll position if it reaches the end of the duplicated content
+                    if (scrollAmount >= shopItems.scrollWidth / 2) {
+                        scrollAmount = 0;
+                    }
+    
+                    requestAnimationFrame(autoScroll);
+                }
+    
+                autoScroll();
+            });
+        </script>
     </section>
     
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #121212;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-        }
     
-        h2 {
-            font-family: 'Star Wars', sans-serif;
-            font-size: 36px;
-            text-align: center;
-            color: #ffcc00;
-            margin-bottom: 20px;
-        }
-    
-        p {
-            text-align: center;
-            font-size: 18px;
-            color: #ccc;
-        }
-    
-        #shop-items {
-            display: flex;
-            overflow-x: auto;
-            padding: 20px;
-            gap: 20px;
-            scroll-snap-type: x mandatory; /* Enables snapping behavior */
-            background-color: #1f1f1f; /* Adding background color */
-        }
-    
-        .shop-item {
-            background: #222;
-            border: 2px solid #444;
-            border-radius: 10px;
-            width: 250px;
-            text-align: center;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s, box-shadow 0.3s;
-            position: relative;
-            overflow: hidden;
-            scroll-snap-align: start; /* Ensures each item aligns properly when scrolling */
-        }
-    
-        .shop-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(255, 204, 0, 0.6);
-        }
-    
-        .shop-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-            transition: transform 0.3s ease-in-out;
-        }
-    
-        .shop-item:hover img {
-            transform: scale(1.1);
-        }
-    
-        .shop-item h3 {
-            font-family: 'Star Wars', sans-serif;
-            font-size: 20px;
-            color: #ffcc00;
-            margin: 10px 0;
-        }
-    
-        .shop-item p {
-            font-size: 14px;
-            color: #ccc;
-            margin-bottom: 15px;
-        }
-    
-        .shop-item button {
-            padding: 10px;
-            background: #ffcc00;
-            color: #000;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-    
-        .shop-item button:hover {
-            background-color: #000;
-            color: #ffcc00;
-            transform: scale(1.1);
-        }
-    
-    </style>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const shopItemsContainer = document.getElementById("shop-items");
-    
-            // Fetch items from the backend
-            fetch('/api/shop-items')
-                .then(response => response.json())
-                .then(data => {
-                    data.forEach(item => {
-                        const itemElement = document.createElement("div");
-                        itemElement.className = "shop-item";
-                        itemElement.innerHTML = `
-                            <img src="${item.image}" alt="${item.name}">
-                            <h3>${item.name}</h3>
-                            <p>${item.description}</p>
-                            <p>Price: $${item.price}</p>
-                            <button onclick="alert('Added ${item.name} to cart!')">Add to Cart</button>
-                        `;
-                        shopItemsContainer.appendChild(itemElement);
-                    });
-                })
-                .catch(err => console.error("Failed to fetch shop items", err));
-        });
-    </script>
-    </section>
     <footer>
         <div class="footer-container">
             <div class="background-overlay"></div>
@@ -1483,6 +1483,39 @@
                 </p>
             </div>
         </div>
+        <style>
+            footer {
+                background: url('footerbg2.jpg') no-repeat, center center;
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+            }
+            
+            footer.background-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                z-index: 999;
+                display: none;
+            }
+            
+            footer.background-overlay.visible {
+                display: block;
+            }
+            
+            footer.content {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            
+            footer.content p {
+                margin-bottom: 10px;
+            }
+        </style>
         </footer>
 
 
