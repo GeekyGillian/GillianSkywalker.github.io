@@ -1,0 +1,80 @@
+{
+    "title": "Star Wars - Characters",
+    "characters": [
+        {
+            "name": "Anakin Skywalker",
+            "image": "Anakin.jpg",
+            "description": "Anakin Skywalker had the potential to become one of the most powerful Jedi ever."
+        },
+        {
+            "name": "Obi-Wan Kenobi",
+            "image": "Obiwanart2.jpg",
+            "description": "A legendary Jedi Master, Obi-Wan was noble and skilled in the ways of the Force."
+        },
+        {
+            "name": "Luke Skywalker",
+            "image": "Luke Skywalker.jpg",
+            "description": "Luke rose from humble beginnings to become one of the greatest Jedi."
+        },
+        {
+            "name": "Master Yoda",
+            "image": "yoda.jpg",
+            "description": "Yoda was a wise and powerful Jedi Master who trained Jedi for over 800 years."
+        },
+        {
+            "name": "Han Solo",
+            "image": "HansSolo.jpg",
+            "description": "Han was a smuggler-turned-hero who fought for the Rebel Alliance."
+        },
+        {
+            "name": "Leia Organa",
+            "image": "leia.jpg",
+            "description": "Leia was a leader of the Rebel Alliance and a symbol of hope for the galaxy."
+        },
+        {
+            "name": "Kylo Ren",
+            "image": "Kylo.jpg",
+            "description": "The son of Han Solo and Leia Organa, Ben Solo was seduced by the dark side of the Force."
+        },
+        {
+            "name": "Darth Vader",
+            "image": "Darth Vader.jpg",
+            "description": "Once a Jedi, Darth Vader became one of the most feared Sith Lords in history."
+        },
+        {
+            "name": "Darth Maul",
+            "image": "Maul.jpg",
+            "description": "Maul is a powerful Sith Lord, known for his fearsome appearance and skills in battle."
+        },
+        {
+            "name": "Chewbacca",
+            "image": "Chewie.jpg",
+            "description": "Chewbacca, a famed Wookiee warrior and Han Solo's long-time co-pilot, continues to serve as trusty first mate as he pilots the Millennium Falcon on dangerous missions against the First Order."
+        },
+        {
+            "name": "Boba Fett",
+            "image": "boba fett.jpeg",
+            "description": "With his customized Mandalorian armor, deadly weaponry, Boba Fett was once regarded as one of the most fearsome and capable bounty hunters in the galaxy."
+        },
+        {
+            "name": "R2-D2",
+            "image": "r2d2.jpg",
+            "description": "R2-D2, the second droid in the Star Wars saga, was the first robotic droid ever created by the Galactic Empire."
+        },
+        {
+            "name": "The Stormtroopers",
+            "image": "storm.jpg",
+            "description": "Stormtroopers are elite shock troops that are fiercely devoted to the Empire and cannot be swayed from their goal."
+        },
+        {
+            "name": "C-3PO",
+            "image": "c 3po.jpg",
+            "description": "C-3PO longs for more peaceful times, but his continued service to the Resistance keeps the worry-prone droid in the frontlines of galactic conflict."
+        },
+        {
+            "name": "Rey",
+            "image": "rey.jpg",
+            "description": "Seemingly abandoned by her parents on Jakku, Rey grew up a scavenger amid the wreckage of war."
+        }
+    ]
+}
