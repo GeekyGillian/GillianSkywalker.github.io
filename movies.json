@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "Clone Wars",
+        "imageUrl": "CloneWars.jpeg",
+        "description": "As the Clone Wars sweep through the galaxy, Anakin Skywalker and his new Padawan learner Ahsoka Tano plunge into a dangerous mission to rescue the kidnapped son of crime lord Jabba the Hutt. The renegade Count Dooku is determined to make sure that they fail, and with his deadly assassin Asajj Ventress in pursuit, this is a mission with grave consequences."
+    },
+    {
+        "id": 2,
+        "title": "Tales Of Jedi",
+        "imageUrl": "TalesOfJedi.jpeg",
+        "description": "A six-episode event featuring parables built around Jedi from the prequel era. Journey into the lives of two distinctly different Jedi — Ahsoka Tano and Count Dooku. Each will be put to the test as they make choices that will define their destinies."
+    },
+    {
+        "id": 3,
+        "title": "Bad Batch",
+        "imageUrl": "BadBatch.jpeg",
+        "description": "The Bad Batch follows the elite and experimental clones of the Bad Batch (first introduced in “The Clone Wars”) as they find their way in a rapidly changing galaxy in the immediate aftermath of the Clone War. Members of Bad Batch—a unique squad of clones who vary genetically from their brothers in the Clone Army—each possess a singular exceptional skill that makes them extraordinarily effective soldiers and a formidable crew."
+    },
+    {
+        "id": 4,
+        "title": "Obi-Wan Kenobi",
+        "imageUrl": "Obi Wan Kenobi 2.jpeg",
+        "description": "During the reign of the Empire, Obi-Wan Kenobi embarks on a crucial mission."
+    },
+    {
+        "id": 5,
+        "title": "The Mandalorian",
+        "imageUrl": "Mando.jpeg",
+        "description": "After the fall of the Empire, a lone Mandalorian makes his way through the lawless galaxy with his foundling, Grogu."
+    },
+    {
+        "id": 6,
+        "title": "The Book of Boba Fett",
+        "imageUrl": "bobafett2.jpeg",
+        "description": "The Book of Boba Fett finds legendary bounty hunter Boba Fett and mercenary Fennec Shand navigating the galaxy’s underworld when they return to the sands of Tatooine to stake their claim on the territory once ruled by Jabba the Hutt and his crime syndicate."
+    },
+    {
+        "id": 7,
+        "title": "Star Wars: Visions",
+        "imageUrl": "visions.jpeg",
+        "description": "This anthology of animated shorts celebrates the Star Wars mythos."
+    },
+    {
+        "id": 8,
+        "title": "Star Wars: Resistance",
+        "imageUrl": "resistance.jpeg",
+        "description": "Follow young pilot Kaz as he spies on the First Order."
+    },
+    {
+        "id": 9,
+        "title": "Star Wars: Rebels",
+        "imageUrl": "rebel2.jpeg",
+        "description": "Set before A New Hope, Rebels explores the start of the Rebellion."
+    }
+]

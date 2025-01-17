@@ -100,5 +100,8 @@
   "support": true,
   "engines": {
     "node": ">= 0.4"
+  },
+  "dependencies": {
+    "object-inspect": "file:"
   }
 }
